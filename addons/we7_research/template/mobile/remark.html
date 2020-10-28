@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box_big{
+
+            width:100%;
+            height: 100%;
+            margin: 0;
+            position: absolute; left: 0px; top: 0px;right: 0px;bottom: 0px;padding: 0px;
+        }
+        .bg_p6{
+            width:100%;
+            height:auto;
+            object-fit: cover;
+        }
+        .top{
+            width: 100%;
+            height: 400px;
+            position: absolute;
+
+
+        }
+        .box_1{
+
+            width: 80%;
+            height: 350px;
+            position: absolute;left: 10%;right: 10%;top: 60px;
+
+
+
+        }
+        .form{
+            width: 100%;
+            height: 450px;
+            position: relative;top: 400px;
+
+
+
+        }
+        .form_1{
+            width: 80%;
+            height: 350px;
+            position: absolute;top: 50px;left: 10%;right: 10%;
+
+
+
+        }
+        .form_2{
+            width: 100%;
+            height: 300px;
+            position: relative;top:0px;
+
+
+
+        }
+        .box_2{
+            width: 100%;
+            height: 400px;
+            position: absolute;top: 0px;left: 10%;right: 10%;
+
+
+
+
+        }
+        .bto{
+            width: 100%;
+            height: 700px;
+            position: relative;top: 350px;
+
+
+        }
+        .bto1{
+            width: 80%;
+            height: 650px;
+            position: absolute;top: 10px;left: 10%;right: 10%;
+
+        }
+        .btn_p6{
+            width: 220px;
+            height: 50px;
+            position: absolute;top: 300px;right: 200px;
+
+
+        }
+        ul{
+            width:400px;
+            list-style:none;
+            margin:30px auto;
+        }
+        li{
+            padding:6px;
+            position:relative;
+            width: 500px;
+        }
+        label{
+            width:80px;
+            display:inline-block;
+            float:left;
+            line-height:30px;
+        }
+        input[type='text']{
+            height:70px;
+            width: 430px;
+            left: 0px;
+        }
+        input[type='submit']{
+            height: 45px;
+            width: 180px;
+
+        }
+        .box_s{
+            width: 100px;
+            height: 50px;
+            float: left;
+            position: relative;
+            top: 10px;left: 40px;
+
+        }
+        .yindao{
+            width:200px;
+            height: 55px;
+            position: relative;left: 220px;top: -50px;
+
+
+        }
+    </style>
+
+</head>
+<body>
+<img class="bg_p6" src="http://wx.iik-tech.com/addons/we7_research/template/img/p6/p6_bg.jpg"/>
+<div class="box_big">
+    <div class="top">
+        <div class="box_1"><img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/p6/p6_top.png" style="width: 100%"></div>
+    </div>
+    <div class="form">
+        <div class="form_1">
+
+            <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/p6/bg_P6.png" style="width: 100%">
+                <div class="box_2">
+                <form action="" method="post" enctype="multipart/form-data" class="form_2">
+                    <div style="color: yellow;font-size:25px" class="box_s">微信号：</div>
+                            <ul>
+                            <li>
+                            <input type="text" style="font-size:32px" name="wx_id" placeholder="请填写您的微信号"/>
+                            </li>
+                            <li>
+                            <input type="text" style="font-size:32px" name="advise" placeholder="填写您的建议（0-100字）" />
+                            </li>
+                        <div class="mobile-submit">
+                            <input type="hidden" name="token" value="{$_W['token']}"/>
+                            <input type="submit" value="提交" name="submit" style="margin-top: 20px; font-size: 30px; background:#171836;color: yellow">
+                            <div class="yindao" style="color: whitesmoke;font-size:20px"> 请填写您的微信号与建议，即可参与抽奖！</div>
+                        </div>
+<!--                        <li>-->
+<!--                            <input type="hidden" name="token" value="{$_W['token']}"/>-->
+<!--                            <input type="image" name="submit" src="http://wx.iik-tech.com/addons/we7_research/template/img/p6/upload.png" />-->
+<!--                            <span style="color: whitesmoke;font-size:20px"> 请填写您的微信号与建议，即可参与抽奖！</span>-->
+<!--                        </li>-->
+                            </ul>
+                </form>
+                </div>
+
+        </div>
+    </div>
+    <div class="bto">
+        <div class="bto1">
+            <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/p6/prize.png" style="width: 100%">
+        </div>
+        <div class="btn_p6">
+            <a href="http://wx.iik-tech.com/app/index.php?i=2&c=entry&id=53&op=detail&do=myp6_detail&m=we7_research">
+                <img src="http://wx.iik-tech.com/addons/we7_research/template/img/p6/btn_p6.png">
+            </a>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+</html>

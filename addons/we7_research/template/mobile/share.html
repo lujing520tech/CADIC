@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box_big{
+
+            width:100%;
+            height: 100%;
+            margin: 0;
+            position: absolute; left: 0px; top: 0px;right: 0px;bottom: 0px;padding: 0px;
+        }
+
+
+        .top{
+
+            width:80%;
+            height: 50px;
+            position: absolute;
+            top: 5%;left:10%;right: 10%;
+        }
+        .box_1{
+            width: 100%;
+            height:800px;
+            position:relative; ;top:200px;
+
+        }
+        .box_3{
+            width: 100%;
+            height:400px;
+            position:absolute; top:350px;
+
+
+        }
+        .box_3{
+            width: 100%;
+            height:400px;
+            position:absolute; top:350px;
+
+
+        }
+        .box_cent{
+            width: 100%;
+            height: 300px;
+
+            position: absolute;
+            top: 2px;
+
+
+        }
+        .box_left{
+            width: 60%;
+            height: 360px;
+            position: absolute;left: 20px;
+            top: 2px;
+        }
+        .box_right{
+            float: right;
+            width: 250px;
+            height:250px;
+            position: absolute;top: 20px;right: 50px;padding: 10px;
+            /*background: yellow;*/
+
+        }
+        .box2_1{
+            width: 80%;
+            height: 100px;
+            position: relative;top: 20px;left: 50px;
+            /*background: white;*/
+        }
+
+
+        .box2_2{
+            width: 80%;
+            height: 130px;
+            /*background: forestgreen;*/
+            position: relative; top: 10px;left: 50px;
+        }
+        .box2_2_1{
+            width: 80%;
+            height: 130px;
+
+            position: absolute; top: 80px;left: 50px;
+
+        }
+        .box2_1_1{
+            width: 100%;
+            height: 80px;
+
+            position: absolute; top: 50px;left: 50px;
+        }
+
+
+        .box2_3{
+            width: 80%;
+            height: 80px;
+            position: relative;top: 50px;left: 60px;
+
+        }
+
+        .box3_1{
+            height: 100px;
+            width: 100%;
+            position: relative;top: 35px;
+        }
+        .box3_1_1{
+            height: 100px;
+            width: 100%;
+            position: relative;top: 35px;
+
+
+        }
+        .box3_2{
+            width: 100%;
+            height: 280px;
+            position:relative;top: 35px;
+
+        }
+
+
+        .bto{
+
+            width: 100%;
+            height: 400px;
+            position:relative;top:20px;
+
+
+        }
+        .bto1{
+            width: 100%;
+            height:200px;
+            position:relative; top: 240px;
+
+        }
+        .bg_p5{
+            width:100%;
+            height:auto;
+            object-fit: cover;
+        }
+        .bto2{
+            width: 50%;
+            height:200px;
+            position:absolute;top: 80px; right: 80px;
+
+        }
+        .bot3{
+            width: 50%;
+            height:200px;
+            position:absolute;top: 10px; left: 80px;
+        }
+        .massage{
+            width: 80%;
+            height: 450px;
+            position:absolute;left: 10%;right: 10%;top: 10%;
+        }
+        .result{
+            width: 80%;
+            height: 200px;
+            position:absolute;top: 35px;left: 10%;right: 10%;
+        }
+</style>
+</head>
+<body>
+
+<img class="bg_p5" src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/p3_bg.png" />
+<div class="box_big" >
+    <div class="top" align="center"><img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/tite.png" width="200px" style="width: 80%"></div>
+    <div class="box_1" >
+            <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/p5/bg_p5_top.png" style="width: 100%;">
+            <div class="box_cent">
+
+                <div class="box_left">
+                    <div class="box2_1">
+
+                        <div class="box2_1_1" style="color: yellow;font-size:80px">
+                            <img src="http://wx.iik-tech.com/addons/we7_research/template/img/p5/score.png" style="width: 40%;">{php echo($rrows['score']);}
+                        <span style="color: yellow;font-size:40px">分</span></div>
+
+                    </div>
+                    <div class="box2_2">
+                        <div class="box2_2_1">
+                            <img src="{$img_symptom}" style="width:80%">
+                        </div>
+
+                    </div>
+                <div class="box2_3" style="color: whitesmoke;font-size:30px">-您是第{$id}位测试睡眠的人-</div>
+                </div>
+                <div class="box_right">
+
+                        <img src="{$img_head}" style="width: 100%">
+
+                </div>
+            </div>
+        <div class="box_3">
+            <div class="box3_1" align="center" >
+                <div class="box3_1_1">
+                    <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/tiele.png" style="width: 400px;" >
+                </div>
+            </div>
+            <div class="box3_2" > 
+            <div class="result" style="color: yellow;font-size:35px">
+                {$rrows['result']}</div>
+        </div>
+
+    </div>
+    <div class="bto" >
+        <div class="massage" style="color: yellow;font-size:35px">
+            <span style="color: whitesmoke;font-size:45px">睡眠建议：</span>{$message}
+        </div>
+    <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/p5/bg_p5_bto.png" style="width: 100%">
+</div>
+
+    <div class="bto1">
+        <div class="bot3"><img src="http://wx.iik-tech.com/addons/we7_research/template/img/p5/erweima.png" style="width: 50%;"></div>
+        <div class="bto2">
+            <img src="http://wx.iik-tech.com/addons/we7_research/template/img/p5/share.png" style="width: 80%;">
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+{template 'header'}
+
+<link type="text/css" rel="stylesheet" href="../addons/we7_research/template/mobile/common.mobile.css" />
+
+{if $operation == 'display'}
+<div class="mobile-div img-rounded">
+	<div class="mobile-hd" style="border-bottom:0;">我的参与</div>
+	{if empty($rows)}
+	<div style="padding: 15px;">没有查询到与您相关的预约。</div>
+	{else}
+	{loop $rows $item}
+	<a class="mobile-li" href="{php echo $this->createMobileUrl('mysleep', array('id' => $item['rerid'], 'op' => 'detail'))}">
+		<span class="pull-right muted">{php echo date('Y-m-d H:i:s', $item['createtime'])}</span>
+		{$research[$item['reid']]['title']}
+	</a>
+	{/loop}
+	{/if}
+</div>
+
+{elseif $operation == 'detail'}
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html,body{
+		height: 100%;
+		width: 100%;
+	}
+
+	.box_p3{
+		width:100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		position: absolute; left: 0px; top: 0px;right: 0px;bottom: 0px;
+	}
+	.bg_p3{
+		width:100%;
+		height:auto;
+		object-fit: cover;
+	}
+	.top_p3{
+		width:80%;
+		height: 50px;
+		position: absolute;
+		top: 5%;left:10%;right: 10%;
+
+	}
+
+	.middle1{
+		width: 100%;
+		height:320px;
+		position:relative;top:95px;
+
+	}
+	.box_1{
+		width: 92%;
+		height:35%;
+		position: absolute;left: 4%;right: 4%;top: 0%;
+
+	}
+
+	.middle3{
+		width: 94%;
+		height:180px;
+		position: absolute;left: 4%;right: 4%;top:80px;
+
+	}
+
+
+
+	.middle1_4{
+		width: 90%;
+		height:170px;
+
+		position: absolute;left: 5%;
+		right: 5%;
+		top: 3px;
+
+	}
+
+	.middle1_4_top{
+
+		height: 40px;
+		left: 22%;
+		right: 10%;
+		position: relative;
+		top:40px;
+
+	}
+
+	.middle1_4_bot{
+		width: 100%;
+		height:110px;
+
+		position: relative;right:0%;top: 30px;
+
+	}
+	.middle2{
+		width: 90%;
+		height: 180px;
+		position:relative;left: 5%;right: 5%;top:115px;
+
+	}
+
+	.bottom1{
+		width: 92%;
+		height: 80px;
+		position:relative;left: 4%;right: 4%;top:118px;
+
+	}
+	.btn_p3_top{
+		width: 98%;
+		height: 35px;
+
+		position: absolute;left: 3px;right: 3px;
+
+	}
+	.btn_p3_bot{
+		width: 88%;
+		height: 35px;
+
+		position: absolute;top: 60px;left: 6%;right:6% ;
+
+	}
+	.btn_p3_left{
+		width: 150px;
+		height: 35px;
+
+		position: absolute;left:5px;top: 5px;right: 5px;
+	}
+	.btn_p3_rigt{
+		width:150px;
+		height: 35px;
+
+		position: absolute;right: 5px;top: 5px;
+
+	}
+	.score{
+		width: 25px;
+		height: 25px;
+		position: absolute;left: 70px;top: 20px;
+
+
+	}
+</style>
+<body>
+<div class="middle2" style="color: yellow"><p style="color:yellow;font-size:20px">{$b}</p></div>
+</body>
+
+
+
+
+{/if}
+
+{template 'footer'}

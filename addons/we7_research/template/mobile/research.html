@@ -1,0 +1,85 @@
+{template 'header'}
+
+<link type="text/css" rel="stylesheet" href="../addons/we7_research/template/mobile/common.mobile.css" />
+
+{if $operation == 'display'}
+<div class="mobile-div img-rounded">
+	<div class="mobile-hd" style="border-bottom:0;">我的参与</div>
+	{if empty($rows)}
+	<div style="padding: 15px;">没有查询到与您相关的预约。</div>
+	{else}
+	{loop $rows $item}
+	<a class="mobile-li" href="{php echo $this->createMobileUrl('myresearch', array('id' => $item['rerid'], 'op' => 'detail'))}">
+		<span class="pull-right muted">{php echo date('Y-m-d H:i:s', $item['createtime'])}</span>
+		{$research[$item['reid']]['title']}
+	</a>
+	{/loop}
+	{/if}
+</div>
+
+{elseif $operation == 'detail'}
+
+<link rel="stylesheet" href="http://wx.iik-tech.com/addons/we7_research/static/layui/css/layui.css"  media="all">
+<script src="http://wx.iik-tech.com/addons/we7_research/static/js/echarts.min.js"></script>
+
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.zhuti{
+		width: 100%;
+		height: 600px;
+
+	}
+	.bgzhuti{
+		width:100%;
+		height:auto;
+		object-fit: cover;
+	}
+
+	.result{
+		position:absolute;
+		width: 80%;
+		left: 10%;
+		right: 10%;
+		top: 380px;
+		font-family: Microsoft YaHei;
+		font-size: 18px;
+		color: #4A4A4A;
+		letter-spacing: -0.17px;
+		text-align: justify;
+
+	}
+
+</style>
+
+<body>
+
+<div class="zhuti">
+<img class="bgzhuti" src="http://wx.iik-tech.com/addons/we7_research/template/img/newres1.png">
+
+<div class="result">
+	<p>
+		{$b['result']}  <p>舌质{$b['chi_hen']}，{$b['lie_wen']}，颜色为{$b['tongue_quality_result']}，{$b['run']}，{$b['zao']}，{$b['dianci']}，{$b['ni']}，{$b['pda']}，{$b['lie_wen']}，{$b['houbo']}。</p>
+	</p>
+	<p>舌质{$b['chi_hen']}，{$b['lie_wen']}，颜色为{$b['tongue_quality_result']}。</p>
+
+</div>
+
+<div class="layui-btn layui-btn-radius" style="background: #688952;font-size: 15px;width: 150px;position: absolute;left:10px;top: 580px">
+	<a href="http://wx.iik-tech.com/app/index.php?i=2&c=entry&eid=62">查看历史测试结果</a> </div>
+<div class="layui-btn layui-btn-radius" style="background: #688952;font-size: 15px;position: absolute;top: 580px;right: 10px;width: 150px">
+	<a href="http://wx.iik-tech.com/app/./index.php?i=2&c=entry&id=1&do=pg&m=we7_pg">测一测体质</a></div>
+<!--    <div class="layui-btn layui-btn-radius" style="background: #688952;font-size: 15px;position: absolute;top: 630px;width: 80%;left: 10%;right: 10%">-->
+<!--        填写您的意见</div>-->
+</div>
+
+
+<script src="http://wx.iik-tech.com/addons/we7_research/static/layui/layui.js" charset="utf-8"></script>
+
+{/if}
+
+{template 'footer'}

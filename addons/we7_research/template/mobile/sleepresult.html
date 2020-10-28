@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱颐宽AI测试系列之睡眠</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+    .bg{
+        width:100%;
+        height:auto;
+        object-fit: cover;
+    }
+    .title{
+       width: 100%;
+
+
+    }
+    .top{
+        position: absolute;
+        top: 100px;
+        align-content: center;
+        width: 100%;
+
+
+    }
+
+    .box{
+
+        position: absolute;
+        top:680px;
+        width: 70%;
+
+        margin-left: 15%;
+        font-size: 44px;
+        color: #D6BB0B;
+
+    }
+    .bto{
+
+        position: absolute;
+        top:250px;
+        width: 100px;
+        margin-left: 220px;
+
+    }
+    .bto1{
+
+        position: absolute;
+        top:300px;
+        width: 100px;
+        margin-left: 500px;
+
+    }
+    .bto2{
+
+
+        position: absolute;
+        width: 100px;
+        margin-left: 35%;
+        top:1580px;
+    }
+    .bto3{
+
+        position: absolute;
+       top:1900px;
+        width: 180px;
+        margin-left: 35%;
+
+    }
+    .bto4{
+
+         position: absolute;
+        top:540px;
+         width: 120px;
+         margin-left: 24%;
+
+     }
+    .score{
+    font-size:100px;
+        color: #D6BB0B;
+        font-weight: bolder;
+        position: absolute;
+        top:400px;
+        width: 120px;
+        margin-left: 64%;
+    }
+
+</style>
+<body>
+<img class="bg" src="http://wx.iik-tech.com/addons/we7_research/template/img/bg_p3.png">
+ <div class="top">
+     <div class="title"> <img style="height: 70px;margin-left: 10%" src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/tite.png">
+         <p class="score"> {$rows}</p></div>
+
+ </div>
+
+<div class="box" > <p style=" letter-spacing:5px; text-indent:100px;">{$advise}</p> </div>
+<div class="bto4"><img style="width: 300px" src="http://wx.iik-tech.com/addons/we7_research/template/img/p5/score.png">  </div>
+<div class="bto"><img style="width: 200px" src={$imghead}>  </div>
+<div class="bto1"><img style="width: 300px" src={$imgsymptom}>  </div>
+<div class="bto2"><img style="width: 300px" src="http://wx.iik-tech.com/addons/we7_research/template/img/p5/erweima.png">  </div>
+<div class="bto3"><img style="width: 300px" src="http://wx.iik-tech.com/addons/we7_research/template/img/p5/share.png">  </div>
+
+</body>
+</html>

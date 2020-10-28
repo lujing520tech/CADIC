@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.zheyitianshi.com" versionCode="0.8,1.0">
+	<application setting="false">
+		<name><![CDATA[shch食堂]]></name>
+		<identifie><![CDATA[we7_research]]></identifie>
+		<version><![CDATA[4.6.1]]></version>
+		<type><![CDATA[customer]]></type>
+		<ability><![CDATA[可以快速生成调查表单或则预约记录]]></ability>
+		<description><![CDATA[shch食堂]]></description>
+		<author><![CDATA[shch食堂]]></author>
+		<url><![CDATA[https://www.zheyitianshi.com]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+			<message type="text" />
+		</handles>
+		<rule embed="true" />
+		<card embed="false" />
+		
+	</platform>
+	<bindings>
+		<menu>
+			<entry title="菜单管理" do="Vegetable" state="" direct="false" />
+
+		</menu>
+		<profile>
+			<entry title="我的预约" do="myresearch" state="" direct="false" />
+		</profile>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install></install>
+	<uninstall></uninstall>
+	<upgrade></upgrade>
+</manifest>

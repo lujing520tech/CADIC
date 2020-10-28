@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/*banner开始*/
+.header{
+	position: relative;
+	width: 100%;
+}
+.banner{ 
+	width: 100%; 
+	height: 4rem; 
+	overflow: hidden; 
+	position: relative; 
+}
+.focus{ 
+	height: 4rem; 
+}
+.focus .bd ul li{ 
+	height: 4rem; 
+	width: 100%; 
+}
+.focus .bd img{ 
+	height: 100%; 
+	width: 100%; 
+}
+.focus .hd{ 
+	display: none; 
+	width: 100%; 
+	position: absolute; 
+	z-index: 9999; 
+	bottom: 5px; 
+	text-align: center; 
+	margin: 0 auto; 
+}
+.focus .hd ul li{ 
+	width: 0.12rem; 
+	height: 0.12rem; 
+	-webkit-border-radius: 50%; 
+	border-radius: 50%; 
+	float: left; display: inline-block; 
+	margin-right: 0.1rem; 
+	border: 1px solid #fff; 
+	cursor: pointer; 
+}
+.focus .hd ul .on{ 
+	background: #fff; 
+}
+.focus .hd ul { 
+	margin-left: 3.4rem; 
+}
+/*nav*/
+.nav-box{
+	position: absolute;
+	width: 5rem;
+	z-index: 2;
+	left: 50%;
+	margin-left: -2.5rem;
+	top: -0.8rem;
+	text-align: center;
+}
+.nav-btn{
+	position: relative;
+}
+.nav-box a{
+	display: block;
+	height: 0.6rem;
+	width: 5rem;
+	line-height: 0.6rem;
+	font-size: 0.3rem;
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: rgba(255,161,80,.9);
+	-webkit-border-radius: 0.1rem;
+	-moz-border-radius: 0.1rem;
+	border-radius: 0.1rem;
+}
+.nav-btn img{
+	position: absolute;
+	top: -0.4rem;
+	right: -0.4rem;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+.nav{
+	display: none;
+	z-index: 99999;
+}
+.show{
+	display: block;
+}
+/*中间内容框*/
+.wrapper{
+	width: 7.04rem;
+	margin: 0.7rem 0.23rem 0 0.23rem;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wrap{
+	width: 7.04rem;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.fl-r{
+	float: right;
+}
+.fl-l{
+	float: left;
+}
+/*页尾部分*/
+.footer{
+	width: 100%;
+	background-color: #ffa150;
+	overflow: hidden;
+	padding: 0.1rem 0;
+	font-size: 0.24rem;
+	color: #333;
+	line-height: 0.4rem;
+}
+.footer ul{
+	width: 7.04rem;
+	margin: 0 auto;
+}
+.ewm-box{
+	width: 30%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+.ewm-box img{
+	width: 1.1rem;
+	height: 1.1rem;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+.ewm-box p{
+	width: 100%;
+	margin: 0.1rem 0;
+}
+.f-text{
+	width: 70%;
+}
+.f-text p{
+	word-wrap: break-word;
+	word-break: normal;
+}
+.main-{
+	/* main绝对定位，进行内部滚动 */
+    position: absolute;
+    /*top: 3.91rem;*/
+    overflow-y: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 使之可以滚动 */
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+/*kong-站位*/
+.kong{
+	width: 100%;
+	height: 1.1rem;
+}
+/*底部导航*/
+.footer-nav .current{
+	background-position: center top;
+	color: #ffa150;
+}
+#footer{
+	position: absolute;
+	bottom: 0;
+	 z-index: 99;
+}
+.footer-nav{
+	position: fixed;
+	bottom: 0;
+	height: 1rem;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+}
+.footer-nav-ios{
+	position: static;
+}
+.footer-nav li{
+	float: left;
+	width: 25%;
+}
+.footer-nav a{
+	display: block;
+	width: 100%;
+	padding: 0.1rem 0;
+}
+.footer-nav span{
+	font-size: 0.24rem;
+	color: #666666;
+	line-height: 0.36rem;
+}
+.icon-box{
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 0 auto;
+	overflow: hidden;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.icon-1{
+	background-image: url(../img/icon-home.png);
+}
+.icon-2{
+	background-image: url(../img/icon-new.png);
+}
+.icon-3{
+	background-image: url(../img/icon-hotline.png);
+}
+.icon-4{
+	background-image: url(../img/icon-phone.png);
+}

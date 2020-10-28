@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .box_p3{
+        width:100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute; left: 0px; top: 0px;right: 0px;bottom: 0px;
+    }
+    .bg_p3{
+        width:100%;
+        height:auto;
+        object-fit: cover;
+    }
+    .top_p3{
+        width:80%;
+        height: 50px;
+        position: absolute;
+        top: 5%;left:10%;right: 10%;
+
+    }
+
+    .middle1{
+        width: 100%;
+        height:320px;
+        position:relative;top:95px;
+
+    }
+    .box_1{
+        width: 92%;
+        height:35%;
+        position: absolute;left: 4%;right: 4%;top: 0%;
+
+    }
+    .middle1_1{
+        width: 94%;
+        height:80%;
+
+        position: absolute;left: 3%;right: 3%;top: 0%;
+    }
+    .middle3{
+        width: 94%;
+        height: 180px;
+        position: absolute;left: 4%;right: 4%;top:80px;
+
+    }
+    .middle1_1_top{
+        width: 48%;
+        height: 33px;
+        float: bottom;
+        position: absolute;left:0px;top: 20px;padding: 2px;
+    }
+    .middle1_1_bot{
+        width: 48%;
+        height: 50%;
+
+        position: absolute;left:1px;top: 52%;padding: 5px;
+    }
+
+    .middle1_2{
+        width: 80px;
+        height:80px;
+
+        position: absolute;right:30px ;top: 10px;padding: 2px;
+
+    }
+    .middle1_3{
+        width: 150px;
+        height:175px;
+        position: absolute;left: 0;top: 30px;right: 59%;padding: 5px;
+
+    }
+    .middle1_4{
+        width: 49%;
+        height:170px;
+
+        position: absolute;left: 50%;top: 3px;
+
+    }
+
+    .middle1_4_top{
+        width: 100%;
+        height: 40px;
+
+        position: relative;right:0%;top:40px;
+
+    }
+    .middle1_4_top1{
+        width:50px;
+        height: 40px;
+
+
+        position: relative;left: 90px;top: 0px;
+
+    }
+    .middle1_4_bot{
+        width: 100%;
+        height:110px;
+
+        position: relative;right:0%;top: 30px;
+
+    }
+    .middle2{
+        width: 90%;
+        height: 180px;
+        position:relative;left: 5%;right: 5%;top:115px;
+
+    }
+
+    .bottom1{
+        width: 92%;
+        height: 80px;
+        position:relative;left: 4%;right: 4%;top:118px;
+
+    }
+    .btn_p3_top{
+        width: 98%;
+        height: 35px;
+
+        position: absolute;left: 3px;right: 3px;
+
+    }
+    .btn_p3_bot{
+        width: 88%;
+        height: 35px;
+
+        position: absolute;top: 60px;left: 6%;right:6% ;
+
+    }
+    .btn_p3_left{
+        width: 150px;
+        height: 35px;
+
+        position: absolute;left:5px;top: 5px;right: 5px;
+    }
+    .btn_p3_rigt{
+        width:150px;
+        height: 35px;
+
+        position: absolute;right: 5px;top: 5px;
+
+    }
+    .score{
+        width: 25px;
+        height: 25px;
+        position: absolute;left: 70px;top: 20px;
+
+
+    }
+
+</style>
+<body>
+<img class="bg_p3" src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/p3_bg.png"/>
+</body>
+<div class="box_p3">
+    <div class="top_p3" align="center"><img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/tite.png" width="200px" style="width: 80%"></div>
+    <div class="middle1" >
+        <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/bg_yinying.png" style="width:100%;height: 100%">
+        <div class="box_1">
+            <div class="middle1_1" >
+                <div class="middle1_1_top" ><img src="http://wx.iik-tech.com/addons/we7_research/template/img/p5/score.png" style="width: 50%;">
+                </div>
+                <div class="middle1_1_bot">
+                    <img src={$img_symptom} style="width: 100%">
+                </div>
+                <div class="middle1_4_top1" style="color: yellow;font-size:40px">
+                    <div class="score" style="color: yellow;font-size:20px">分</div>
+                </div>
+
+
+            </div>
+            <div class="middle1_2"><img src={$img_head} width="80px"></div>
+        </div>
+        <div class="middle3">
+            <div class="middle1_3"><img src="{php echo tomedia($rrows['newimage']);}" style="width: 100%"height="100%"></div>
+            <div class="middle1_4">
+                <div class="middle1_4_top">
+                    <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/tiele.png"width="160px">
+                </div>
+                <div class="middle1_4_bot" style="color: yellow"></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle2" style="color: yellow"><p style="color:whitesmoke;font-size:20px">睡眠建议:</p>{$message}</div>
+    <div class="bottom1">
+        <div class="btn_p3_top">
+            <div class="btn_p3_left"><a href="http://wx.iik-tech.com/app/index.php?i=2&c=entry&id={$id}&op=detail&do=myremark&m=we7_research">
+                <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/btn2.png" width="150px"></a>
+            </div>
+            <div class="btn_p3_rigt"><a href="http://wx.iik-tech.com/app/index.php?i=2&c=entry&id={$id}&op=share&do=myresearch&m=we7_research">
+
+                <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/btn1.png" width="150px"></a>
+            </div>
+        </div>
+        <div class="btn_p3_bot" align="center"><a href="http://wx.iik-tech.com/app/index.php?i=2&c=entry&eid=62">
+            <img src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/wx%E7%B4%A0%E6%9D%90/btn3.png"width="300px"></a></div>
+    </div>
+    <!--	<div class="bottom2">底部空白div</div>-->
+</div >
+</html>

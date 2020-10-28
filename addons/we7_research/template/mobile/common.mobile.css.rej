@@ -1,0 +1,15 @@
+diff a/addons/we7_research/template/mobile/common.mobile.css b/addons/we7_research/template/mobile/common.mobile.css	(rejected hunks)
+@@ -37,11 +37,11 @@
+ .category{padding:10px 0 0 10px;overflow:hidden;border-bottom:1px #CCC dashed;}
+ .category a{position:relative;float:left;overflow:hidden;display:inline-block;font-weight:normal;text-decoration:none;font-size:14px;padding:0;margin:0 3% 10px 0;width:30%;}
+ .category a img{width:100%;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+-.category a .name{width:100%;height:25px;line-height:25px;display:block;font-weight:normal;font-size:25px;overflow:hidden;position:absolute;bottom:5px;z-index:10;color:#FFF;text-align:center;}
++.category a .name{width:100%;height:25px;line-height:25px;display:block;font-weight:normal;font-size:16px;overflow:hidden;position:absolute;bottom:5px;z-index:10;color:#FFF;text-align:center;}
+ .category a .name_bg{filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;background:#000;width:100%;height:25px;position:absolute;bottom:5px;z-index:9;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-border-radius-topleft:0;-moz-border-radius-topright:0;-webkit-border-top-left-radius:0;-webkit-border-top-right-radius:0;border-top-left-radius:0;border-top-right-radius:0;}
+ .top{overflow:hidden;margin-bottom:15px;}
+ .top span{display:block; width:100%;}
+-.top .title{font-size:30px; font-weight:600; height:30px; line-height:30px;}
++.top .title{font-size:20px; font-weight:600; height:30px; line-height:30px;}
+ .top .date{font-size:12px; color:#666;}
+ .content{padding:10px; border-bottom:1px #CCC dashed;}
+ .content .media{margin-bottom:18px;}

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>舌诊结果</title>
+</head>
+<style>
+
+    .title_content_1{
+        float: left;
+        margin-left: 3%;
+        width: 27%;
+
+    }
+    .font_1{
+        font-size: 9px;
+    }
+    .font_2{
+        font-size: 13px;
+    }
+
+    .she_all{
+        position: relative;
+        bottom: 80px;
+        /*border: 1px red solid;*/
+        width: 85%;
+        margin: 5% auto;
+        padding: 3%;
+        border-radius: 3%;
+        background-color:   rgba(255, 255, 255, 1);
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 500;
+    }
+    .title_content_2{
+    ;
+    }
+    .title_content_3{
+
+    }
+    .bou_1{
+        margin: 10% auto;
+        position: relative;
+        bottom: 60px;
+        width: 85%;
+
+    }
+    .content1{
+        /*border: 1px red solid;*/
+        background-color:   rgba(255, 255, 255, 1);
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 500;
+        margin: 5% auto;
+        padding: 3%;
+        border-radius: 3%;
+        font-size: 13px;
+
+
+    }
+    .images{
+        width: 15%;
+        height: 10%;
+    }
+    .title_text{
+        color:#4A4949;
+    }
+    .title{
+        text-align: center;
+        margin: 5% auto;
+    }
+    .content_123{
+        margin: 4% auto;
+    }
+    .tishi{
+        display: none;
+    }
+    body{
+        overflow:auto;overflow-x: hidden
+    }
+</style>
+<body  style="background-image: url('https://iik-ap1.oss-cn-shanghai.aliyuncs.com/audios/tianma/my/Main_background.png');margin: 0;padding: 0">
+<div>
+    <div style="margin: 0;padding: 0">
+        <div style="background-color: rgba(255, 255, 255, .5); width: 100%;margin: 0;padding: 10% 0 ">
+            <div style="width: 30%;height: 40%;margin: 2% 2%">
+                <img style="width:100%;height: 100%" src="http://iik-ap1.oss-cn-shanghai.aliyuncs.com/{$b['img']}" alt="">
+            </div>
+
+            <div style="position: relative;left:40%;bottom: 120px;width: 50%">
+                <span>已获您本次舌诊报告</span>
+                <br>
+                <span>舌诊结果：{$type_content}</span>
+            </div>
+        </div>
+        <div class="she_all">
+            <div class="title_1">
+                <div class="title_content_1 font_1"><span>舌色</span></div>
+                <div class="title_content_1 title_content_2 font_1"><span>点刺</span><img onclick="Ondian('dianci')" class="images" src="
+https://iik-ap1.oss-cn-shanghai.aliyuncs.com/audios/tianma/my/yw.png" alt=""></div>
+                <div class="title_content_1 title_content_3 font_1"><span>裂纹</span><img  onclick="Ondian('liewen')" class="images" src="
+https://iik-ap1.oss-cn-shanghai.aliyuncs.com/audios/tianma/my/yw.png" alt=""></div>
+            </div>
+            <br>
+            <div class="title_1">
+                <div class="title_content_1 font_2"><span>{$b['tongue_quality_result']}</span></div>
+                <div class="title_content_1 title_content_2 font_2"><span>{php echo $b['dianci']?$b['dianci']:'正常'}</span></div>
+                <div class="title_content_1 title_content_3 font_2"><span>{php echo $b['lie_wen']?$b['lie_wen']:'正常'}</span></div>
+            </div>
+            <br>
+
+            <hr>
+            <div class="title_1">
+                <div class="title_content_1 font_1"><span>苔色</span></div>
+                <div class="title_content_1 title_content_2 font_1"><span>苔质</span></div>
+                <div class="title_content_1 title_content_3 font_1"><span>齿痕</span><img class="images" onclick="Ondian('ciheng')" src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/audios/tianma/my/yw.png" alt=""></div>
+            </div>
+            <br>
+            <div class="title_1">
+                <div class="title_content_1 font_2"><span>{$type_content}</span></div>
+                <div class="title_content_1 title_content_2 font_2"><span>{php echo $b['houbo']?$b['houbo']:'正常'}</span></div>
+                <div class="title_content_1 title_content_3 font_2"><span>{php echo $b['chi_hen']?$b['chi_hen']:'正常'}</span></div>
+            </div>
+            <br>
+
+            <hr>
+            <div class="title_1">
+                <div class="title_content_1 font_1"><span>胖瘦</span><img class="images" onclick="Ondian('pang')" src="https://iik-ap1.oss-cn-shanghai.aliyuncs.com/audios/tianma/my/yw.png" alt=""></div>
+                <div class="title_content_1 title_content_2 font_1"><span>润燥</span></div>
+                <div class="title_content_1 title_content_3 font_1" ><span>是否腻</span></div>
+            </div>
+            <br>
+            <div class="title_1">
+                <div class="title_content_1 font_2"><span>{php echo $b['houbo']?$b['houbo']:'正常'}</span></div>
+                <div class="title_content_1 title_content_2 font_2"><span>{php echo $b['zao']?$b['zao']:'正常'}</span></div>
+                <div class="title_content_1 title_content_3 font_2"><span>{php echo $b['ni']?$b['ni']:'正常'}</span></div>
+            </div>
+            <br>
+        </div>
+
+        <div class="bou_1">
+            <div>
+                <span class="title_text">舌象释义</span>
+            </div>
+            <div class="content1">
+                <span>{php echo $b['shexiang']?$b['shexiang']:'正常'}</span>
+            </div>
+
+        </div>
+        <div class="bou_1">
+            <div>
+                <span class="title_text">与健康相关性</span>
+            </div>
+            <div class="content1">
+                <span>{php echo $b['health']?$b['health']:'正常'}</span>
+            </div>
+
+        </div>
+        <div class="bou_1">
+            <div>
+                <span class="title_text">健康养生建议</span>
+            </div>
+            <div class="content1">
+                <span>{php echo $b['health_advice']?$b['health_advice']:'正常'}</span>
+            </div>
+            <div>
+                <div style="width: 100%;margin-left: 7%"> <a href="http://wx.iik-tech.com/app/index.php?i=2&c=entry&eid=62">查看历史测试结果</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://wx.iik-tech.com/app/./index.php?i=2&c=entry&id=1&do=pg&m=we7_pg">测一测体质</a></div>
+                <div  style="margin: 10% auto; "> <span>本舌诊服务由颐宽（上海）科技有限公司提供，免费获取舌诊服务热线：18621895397（联系人：李先生）</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="dianci" class="tishi">
+    <div class="title"><span>点刺舌</span></div>
+    <div  class="font_2 content_123" ><span>舌尖生点刺—心火旺：保持心情舒畅，避免情绪大起大落。忌食辛辣油腻，戒烟戒酒。可食用绿豆，莲子心等清心火的食物。</span></div>
+    <div  class="font_2 content_123"><span>舌边有点刺—肝胆火盛：平时应注意调节控制情绪，可用白菊花，夏枯草，白芍泡茶饮。</span></div>
+    <div  class="font_2 content_123"><span>舌中生点刺—胃肠热盛：少食辛辣刺激食物，多吃绿豆，苦瓜，白菜，芹菜等。</span></div>
+</div>
+<div id="liewen" class="tishi">
+    <div class="title"><span>裂纹舌</span></div>
+    <div  class="font_2 content_123"><span>主阴血不足。平常注意口腔卫生，少吃辛辣，过热等刺激性食品，补充水分。注意消化系统器质性病变。</span></div>
+</div>
+<div id="ciheng" class="tishi">
+    <div class="title"><span>齿痕舌</span></div>
+    <div class="font_2 content_123"><span>主脾虚或湿盛。平时应注重补脾祛湿，少吃油腻不易消化的食物，多食水果蔬菜，清淡饮食。可食用山药，薏苡仁，冬瓜等利水之物。</span></div>
+</div>
+<div id="pang" class="tishi">
+    <div class="title"><span>胖瘦舌</span></div>
+    <div  class="font_2 content_123"><span>主脾肾阳虚，痰湿内盛。建议注意保暖，平时可食用山药，茯苓等祛湿之物。</span></div>
+</div>
+
+
+
+<!--    <div class="layui-btn layui-btn-radius" style="background: #688952;font-size: 15px;position: absolute;top: 630px;width: 80%;left: 10%;right: 10%">-->
+<!--        填写您的意见</div>-->
+
+
+</body>
+</html>
+<script src="http://wx.iik-tech.com/addons/we7_research/static/jquery/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="http://wx.iik-tech.com/addons/we7_research/static/layer/layer.js" charset="utf-8"></script>
+<script>
+    function Ondian(type) {
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['80%', '30%'], //宽高
+            content: $('#'+type)
+        });
+    }
+</script>
