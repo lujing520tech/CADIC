@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.w7.cc" versionCode="">
+	
+	<application setting='false'>
+		<name><![CDATA[CADIC小程序]]></name>
+
+		<identifie><![CDATA[cadiy_daily]]></identifie>
+
+		<version><![CDATA[1.0.0]]></version>
+
+		<ability><![CDATA[教育平台]]></ability>
+
+		<type><![CDATA[services]]></type>
+
+		<description><![CDATA[教育平台]]></description>
+
+		<author><![CDATA[lujing520]]></author>
+
+		<url><![CDATA[]]></url>
+
+	</application>
+
+	
+	<platform>
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="branch" />
+			<item type="wxapp" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+		<menu>
+			<entry title="广告管理" do="advertising" state="1" direct="" displayorder="0" multilevel="false" parent="" />
+			<entry title="审核管理" do="audit" state="2" direct="" displayorder="1" multilevel="false" parent="" />
+			<entry title="课程管理" do="course" state="3" direct="" displayorder="3" multilevel="true" parent="" />
+			<entry title="发布课程" do="issue" state="4" direct="" displayorder="0" multilevel="false" parent="course" />
+			<entry title="我的课程" do="myCourse" state="5" direct="" displayorder="1" multilevel="false" parent="course" />
+			<entry title="课程分类管理" do="classify" state="6" direct="" displayorder="2" multilevel="false" parent="" />
+			<entry title="幼儿园绑定管理" do="nurserySchool" state="7" direct="" displayorder="4" multilevel="false" parent="" />
+			<entry title="订单管理" do="order" state="8" direct="" displayorder="5" multilevel="false" parent="" />
+		</menu>
+
+	</bindings>
+
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

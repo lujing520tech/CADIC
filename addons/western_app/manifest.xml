@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.w7.cc" versionCode="">
+	
+	<application setting='false'>
+		<name><![CDATA[western]]></name>
+
+		<identifie><![CDATA[western_app]]></identifie>
+
+		<version><![CDATA[1.0.0]]></version>
+
+		<ability><![CDATA[western app 应用开发]]></ability>
+
+		<type><![CDATA[business]]></type>
+
+		<description><![CDATA[western app 应用开发]]></description>
+
+		<author><![CDATA[lujing520]]></author>
+
+		<url><![CDATA[]]></url>
+
+	</application>
+
+	
+	<platform>
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="branch" />
+			<item type="android" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+		<menu>
+			<entry title="轮播图" do="test_banner" state="12" direct="" displayorder="0" multilevel="true" parent="" />
+			<entry title="轮播图2" do="test_banner2" state="332" direct="" displayorder="0" multilevel="false" parent="test_banner" />
+			<entry title="test1" do="test_banner3" state="test1" direct="" displayorder="0" multilevel="false" parent="" />
+			<entry title="test2" do="test_banner4" state="21" direct="" displayorder="0" multilevel="false" parent="" />
+			<entry title="test3" do="test_banner5" state="321" direct="" displayorder="0" multilevel="false" parent="" />
+		</menu>
+
+	</bindings>
+
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>
